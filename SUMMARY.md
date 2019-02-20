@@ -1,8 +1,8 @@
 # Table of contents
 
 * [Home](README.md)
-* [Questions](faq.md)
 * [Getting Started](getting-started.md)
+* [You May Ask](faq.md)
 
 ## Unturned
 
