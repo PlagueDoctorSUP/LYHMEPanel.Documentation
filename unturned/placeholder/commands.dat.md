@@ -366,3 +366,6 @@ Not Done!
 
 For any other changes, you would like done you can check out this site [here!](http://unturned.wikia.com/wiki/Server_Commands)
 
+> * The list of maps was last updated September 12, 2018.
+> * The site and credit for description messages/tweaked/edited/added by Uncle LYHME: [http://unturned.wikia.com/wiki/Server\_Commands](http://unturned.wikia.com/wiki/Server_Commands)
+
