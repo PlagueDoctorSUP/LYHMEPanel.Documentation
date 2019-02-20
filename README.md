@@ -8,8 +8,6 @@ You do not literally type out `<> {} []` etc.
 This documentation is currently under development.
 {% endhint %}
 
-### 
-
 ### Useful Links
 
 * `LYHME Panel` - [lyhmepanel.com](https://lyhmepanel.com)
