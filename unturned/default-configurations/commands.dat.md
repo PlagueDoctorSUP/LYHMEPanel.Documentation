@@ -1,369 +1,168 @@
 # Commands.dat
 
-{% hint style="info" %}
+{% hint style="danger" %}
 Each time you make a change or changes to this file you have to reboot your server. Along with capitals and lowercases don't matter. 💪🏼
+
+**📢 Please do not change or remove the bind or port numbers.**
 {% endhint %}
 
 ### File Location <a id="where-is-it-located"></a>
 
-Great question! To do this you will want to login to [lyhmepanel.com](https://lyhmepanel.com) 
+Wanting to edit the name of your server along with maybe even change the map? Great question! To do this you will want to login to [lyhmepanel.com](https://lyhmepanel.com) 
 
 1. Click on [Game Services](http://lyhmepanel.com/Interface/GameHosting/GameServers.aspx) under Game & Voice Management then if you have more then one server select the one you want to change
 2. Save and then stop your service then click on `Configuration Files` then to the left of `Commands.dat` Click on `[ Text Editor ]`
 
 Now you are there! Nice work.
 
-```text
-name Unturned 3 - Server
-bind 1.1.1.1
-port 27015
-maxplayers 24
-PvP
-map PEI
-mode normal
-perspective both
-owner 
-chatrate 0
-```
-
- Here is an example of what yours should look like, please keep in mind that the `bind` will be different along with the `maxplayers` and `port` could be the same or different in this example.
-
-{% hint style="danger" %}
-📢 Please do not change or remove the bind or port numbers.
-{% endhint %}
-
-### Server Name <a id="change-server-name"></a>
-
-This feature assigns the name of the server on the server list.
-
-```text
-name Unturned 3 - Server 
-bind 1.1.1.1
-port 27015
-maxplayers 24
-PvP
-map PEI
-mode normal
-perspective both
-owner 
-chatrate 0
-```
-
-What we will be changing is what is highlighted above.
-
-1. You will want to delete the `Unturned 3 - Server` text and replace it with your own.
-
-There is a **50 character** limit including spaces. If you find yourself setting your server name and does not seem to change but it changes to `Unturned` this is the because you are over the 50 character limit.
-
-You can use the following site to count the characters for you, [Lettercount](https://www.lettercount.com/) You do not need to include the `name` and first space of your server name when counting.
-
-Example:
-
-```text
-name superCoolServer|PvE|Kits|TPA|Home 
-```
-
- That is a total of 33 characters, you can now save the file and then reboot your server and the name will be changed.
-
-### Set to PvE <a id="change-to-pve"></a>
-
-This feature disables player versus player combat in favor of player versus environment.[3](https://lyhmewiki.com/user-guide/unturned/commandsdat/#fn:3)
-
-```text
-name superCoolServer|PvE|Kits|TPA|Home
-bind 1.1.1.1
-port 27015
-maxplayers 24
-PvP
-map PEI
-mode normal
-perspective both
-owner 
-chatrate 0
-```
-
-What we will be changing is what is highlighted above.
-
-1. You can delete the last `P` in `PvP` and change it to an `E` making it `PvE` see the example below
-
-Example:
-
-```text
-PvE 
-```
-
-You can now save the file and then reboot your server and it will be changed to PvE.
-
-### Set to PvP <a id="change-to-pvp"></a>
-
-This feature disables player versus environment in favor of player versus player combat[3](https://lyhmewiki.com/user-guide/unturned/commandsdat/#fn:3)
-
-```text
-name superCoolServer|PvE|Kits|TPA|Home
-bind 1.1.1.1
-port 27015
-maxplayers 24
-PvE
-map PEI
-mode normal
-perspective both
-owner 
-chatrate 0
-```
-
-What we will be changing is what is highlighted above.
-
-1. You can delete the `E` in `PvE` and change it to an `P` making it `PvP` see the example below
-
-Example:
-
-```text
-PvP 
-```
-
-You can now save the file and then reboot your server and it will be changed to PvP.
-
-### Change Map <a id="change-the-map"></a>
-
-This feature sets the map that the server loads on startup.[3](https://lyhmewiki.com/user-guide/unturned/commandsdat/#fn:3)
-
-```text
-name superCoolServer|PvE|Kits|TPA|Home
-bind 1.1.1.1
-port 27015
-maxplayers 24
-PvE
-map PEI
-mode normal
-perspective both
-owner 
-chatrate 0
-```
-
-What we will be changing is what is highlighted above.
-
-1. If you do want your server PEI, You will want to delete the `PEI` text and replace it with one of the following but not limited to
-
-| List of Vanilla Maps |  |  |
-| :--- | :--- | :--- |
-| **`Alpha Valley`** / Arena Map | **`Cyprus Arena`** / Arena Map | **`Monolith`** / Arena Map |
-| **`Paintball_Arena_0`** / Arena Map | **`PEI Arena`** / Arena Map | **`Washington Arena`** / Arena Map |
-| **`Cyprus Survival`** / Survival Map | **`Germany`** / Survival Map | **`Greece`** / Survival Map |
-| **`Hawaii`** / Survival Map | **`PEI`** / Survival Map | **`Russia`** / Survival Map |
-| **`Washington`** / Survival Map | **`Yukon`** / Survival Map |  |
-| **`Destruction`** / Other Map | **`Tutorial`** / Other Map |  |
-
-1. Now let's say you want to use `Paintball_Arena_0` see the example below
-
-Example:
-
-```text
-map Paintball_Arena_0 
-```
-
-You can now save the file and then reboot your server and the map will be changed.
-
-### Change Difficulty <a id="change-the-difficulty"></a>
-
-This feature assigns the difficulty of your server
-
-```text
-name superCoolServer|PvE|Kits|TPA|Home
-bind 1.1.1.1
-port 27015
-maxplayers 24
-PvE
-map Paintball_Arena_0
-mode normal
-perspective both
-owner 
-chatrate 0
-```
-
-What we will be changing is what is highlighted above.
-
-With the default option being set to `normal` this has but not limited to bullet drop, and bleeding enabled. If you do not want them to have this option and want to change it...
-
-1. You will want to delete `normal` text and replace it with one of the following:
-
-| List of Modes |
-| :--- |
-| **`easy`** / Such as but not limited to: Bullet Drop, Bleeding are disabled. |
-| **`normal`** / Such as but not limited to: Bullet Drop, Bleeding are enabled. |
-| **`hard`** / Such as but not limited to: Zombies are harder. |
-
-1. Now let's say you want to use `easy` see the example below
-
-Example:
-
-```text
-mode easy
-```
-
-You can now save the file and then reboot your server and the mode will be changed.
-
-### Change Perspective <a id="change-the-perspective"></a>
-
-```text
-name superCoolServer|PvE|Kits|TPA|Home
-bind 1.1.1.1
-port 27015
-maxplayers 24
-PvE
-map Paintball_Arena_0
-mode easy
-perspective both
-owner 
-chatrate 0
-```
-
-What we will be changing is what is highlighted above.
-
-With the default option being set to `Both` this grants all your players access to first, third and third person in the vehicles. If you do not want them to have this option and want to change it...
-
-1. You will want to delete `both` text and replace it with one of the following:
-
-| List of Perspectives |  |
-| :--- | :--- |
-| **`first`** / First Person Only | **`third`** / Third Person Only |
-| **`vehicle`** / Third person available in vehicles | **`both`** / First and Third Person available |
-
-1. Now let's say you want to use `easy` see the example below
-
-Example:
-
-```text
-perspective first 
-```
-
-You can now save the file and then reboot your server and the perspective will be changed.
-
-### Set myself Owner <a id="set-myself-owner"></a>
-
-This feature gives admin rights to the steamid64
-
-```text
-name superCoolServer|PvE|Kits|TPA|Home
-bind 1.1.1.1
-port 27015
-maxplayers 24
-PvE
-map Paintball_Arena_0
-mode easy
-perspective first
-owner 
-chatrate 0
-```
-
-What we will be changing is what is highlighted above.
-
-You will want to do the following:
-
-1. You will want to go here: [https://steamid.io/](https://steamid.io/)
-2. Once there sign in via Steam
-3. Once signed in click on your username to the left of `privacy`
-4. Click on `profile`
-5. Next, you will want to copy the number that starts with... `76561198`
-
-Now that you have your steamID64 copied add a space after the word owner and paste it.
-
-Example:
-
-```text
-owner 76561198267201306 
-```
-
- You can now save the file and then reboot your server and you will be admin.
-
-_It should be similar to the example but the number above will not the exact one as each profile has a unique one. Unless you are the owner of the account above, which is Nelsons._
-
-### Change Chat Rate <a id="change-the-chat-rate"></a>
-
-This feature assigns a minimum time between chat messages to prevent spamming.[3](https://lyhmewiki.com/user-guide/unturned/commandsdat/#fn:3)
-
-```text
-name superCoolServer|PvE|Kits|TPA|Home
-bind 1.1.1.1
-port 27015
-maxplayers 24
-PvE
-map Paintball_Arena_0
-mode easy
-perspective first
-owner 76561198267201306 
-chatrate 0
-```
-
-What we will be changing is what is highlighted above.
-
-1. You will want to delete the `0` number and replace it a number you desire.
-
-Example:
-
-```text
-chatrate 3 
-```
-
- You can now save the file and then reboot your server and the chat rate will be different.
-
-### Enable or Disable Cheats <a id="enable-or-disable-cheats"></a>
-
-This feature allows your server to access certain commands such as Give.[3](https://lyhmewiki.com/user-guide/unturned/commandsdat/#fn:3)
-
-```text
-name superCoolServer|PvE|Kits|TPA|Home
-bind 1.1.1.1
-port 27015
-maxplayers 24
-PvE
-map Paintball_Arena_0
-mode easy
-perspective first
-owner 76561198267201306 
-chatrate 3
-cheats
-```
-
-What we will be changing is what is highlighted above.
-
-{% hint style="danger" %}
-Not Done!
-{% endhint %}
-
-### Enable Gold Only <a id="enable-gold-only"></a>
-
-This feature restricts the server to only allow Gold players.[3](https://lyhmewiki.com/user-guide/unturned/commandsdat/#fn:3)
-
-{% hint style="danger" %}
-Not Done!
-{% endhint %}
-
-### Hide Admins <a id="hide-admins"></a>
-
-This feature allows admins to appear as if they are normal players. Also allows the recording of cinematic footage without the admin labels visible to players.[3](https://lyhmewiki.com/user-guide/unturned/commandsdat/#fn:3)
-
-{% hint style="danger" %}
-Not Done!
-{% endhint %}
-
-### Enable a Loadout <a id="enable-a-loadout"></a>
-
-This feature gives players each item when spawning.[3](https://lyhmewiki.com/user-guide/unturned/commandsdat/#fn:3)
-
-{% hint style="danger" %}
-Not Done!
-{% endhint %}
-
-### Enable a Password <a id="enable-a-password"></a>
-
-This feature assigns the codeword required for entry to the server
-
-{% hint style="danger" %}
-Not Done!
-{% endhint %}
-
-For any other changes, you would like done you can check out this site [here!](http://unturned.wikia.com/wiki/Server_Commands)
-
-> * The list of maps was last updated September 12, 2018.
-> * The site and credit for description messages/tweaked/edited/added by Uncle LYHME: [http://unturned.wikia.com/wiki/Server\_Commands](http://unturned.wikia.com/wiki/Server_Commands)
+### Commands List <a id="where-is-it-located"></a>
+
+Note: Each command you want to add goes on its own line.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Command</th>
+      <th style="text-align:left">Syntax</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">Chatrate</td>
+      <td style="text-align:left">Chatrate [Number]</td>
+      <td style="text-align:left">Assigns a minimum time between chat messages to prevent spamming.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Cheats</td>
+      <td style="text-align:left">Cheats [Enable | Disable]</td>
+      <td style="text-align:left">Allows your server to access certain commands, such as Give, and can only
+        be used in the server's commands.dat file.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Cycle</td>
+      <td style="text-align:left">Cycle [Number]</td>
+      <td style="text-align:left">Assigns the length of the day/night cycle in seconds.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Filter</td>
+      <td style="text-align:left">Filter</td>
+      <td style="text-align:left">Filters out players with non-English-alphanumeric names.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Gold</td>
+      <td style="text-align:left">Gold</td>
+      <td style="text-align:left">Restricts the server to only allow Gold players.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Hide_Admins</td>
+      <td style="text-align:left">Hide_Admins</td>
+      <td style="text-align:left">
+        <p>Admins will appear as if they are normal players.</p>
+        <p>Also allows the recording of cinematic footage without the admin labels
+          visible to players.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Loadout</td>
+      <td style="text-align:left">Loadout [SkillsetID]/[ItemID]/[ItemID]/...</td>
+      <td style="text-align:left">
+        <p>Gives players each item when spawning. Using a skillset ID of 255 gives
+          the item to everyone.</p>
+        <p>Can only be used in a server console or the server's Commands.dat file.
+          <a
+          href="https://unturned.fandom.com/wiki/Character_Skillsets">SkillsetIDs</a>are from 0-10 in the same order as displayed when editing
+            a survivor. 255 = All Skillsets.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Log</td>
+      <td style="text-align:left">Log [Chat]/[Join/Leave]/[Death]/[Anticheat]</td>
+      <td style="text-align:left">Enables logging Chat/Join/Leave/Death messages. Each parameter can only
+        be Y or N. (eg. log y/y/y will log all chat, connections and death messages.)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Map</td>
+      <td style="text-align:left">Map [Level]</td>
+      <td style="text-align:left">Sets the map that the server loads on startup.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">MaxPlayers</td>
+      <td style="text-align:left">MaxPlayers [Number]</td>
+      <td style="text-align:left">Sets the maximum number of connections the server is willing to accept.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Mode</td>
+      <td style="text-align:left">Mode [Easy | Normal | Hard]</td>
+      <td style="text-align:left"><b>easy</b> / Such as but not limited to: Bullet Drop, Bleeding are disabled.
+        <br
+        /><b>normal</b> / Such as but not limited to: Bullet Drop, Bleeding are enabled.
+        <br
+        /><b>hard</b> / Such as but not limited to: Zombies are much harder.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Name [Text]</td>
+      <td style="text-align:left">Assigns the name of the server on the server list.</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Owner</td>
+      <td style="text-align:left">Owner [SteamID]</td>
+      <td style="text-align:left">Gives admin rights to the steamid. Must be placed in the server's Commands.dat</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Password</td>
+      <td style="text-align:left">Password [Text]</td>
+      <td style="text-align:left">Assigns the codeword required for entry to the server.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Perspective</td>
+      <td style="text-align:left">Perspective [First | Third | Both | Vehicle]</td>
+      <td style="text-align:left">Assigns the perspective of the server.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">PvE</td>
+      <td style="text-align:left">PvE</td>
+      <td style="text-align:left">Disables player versus player combat in favor of player versus environment.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Queue_Size</td>
+      <td style="text-align:left">Queue_Size [Number]</td>
+      <td style="text-align:left">Sets the maximum number of queued connections the server is willing to
+        hold on to.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Time</td>
+      <td style="text-align:left">Time [Number]</td>
+      <td style="text-align:left">Assigns the current time in seconds of the day/night cycle.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Timeout</td>
+      <td style="text-align:left">Timeout [Number]</td>
+      <td style="text-align:left">Assigns a maximum ping threshold to the server before a client is kicked.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Votify</td>
+      <td style="text-align:left">Votify [Vote Allowed Y|N]/[Pass Cooldown]/[Fail Cooldown]/[Vote Duration]/[Vote
+        Percentage]/[Required Players]</td>
+      <td style="text-align:left">Sets up voting. Pass/fail cooldown specifies the amount of time that players
+        must wait after a successful/failed vote before initiating another vote.
+        Vote duration specifies the amount of time for each vote to remain active.
+        Vote percentage indicates the percentage of "yes" votes required for a
+        successful vote and must be expressed in decimals (e.g., 0.6 for 60%).
+        Required players specifies the minimum number of connected players in order
+        to initiate a vote.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Welcome</td>
+      <td style="text-align:left">Welcome [Text]/[R]/[G]/[B]</td>
+      <td style="text-align:left">Sets a chat box welcome message shown to clients when connected to the
+        server.
+        <br />
+      </td>
+    </tr>
+  </tbody>
+</table>> The commands list credit to [http://unturned.wikia.com/wiki/Server\_Commands](http://unturned.wikia.com/wiki/Server_Commands)  
+> Modified/Edited/Added by Uncle LYHME, Not all commands are present.  
+> If you would like additional commands please go to the link above.
 
