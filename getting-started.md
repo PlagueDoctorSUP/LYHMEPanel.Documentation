@@ -2,11 +2,7 @@
 
 Are you wanting to get started on setting up your server? Let's get started!
 
-{% hint style="info" %}
-If your question isn't listed please open a support ticket!
-{% endhint %}
-
-### Purchased a Server <a id="purchased-a-server-whats-next"></a>
+### Purchased a Server
 
 Nice work navigating that!
 
