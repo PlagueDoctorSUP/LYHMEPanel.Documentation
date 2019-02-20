@@ -8,7 +8,9 @@ This documentation is currently under development.
 
 #### Useful Links
 
-* **`LYHMEPanel Docs`** - [docs.lyhmepanel.com](https://lyhmepanel.com)
+* `LYHME Panel` - [lyhmepanel.com](https://lyhmepanel.com)
+* `LYHME Hosting` - [lyhmehosting.com](https://lyhmehosting.com)
+* `LYHME Community` - [lyhme.net](https://lyhme.net)
 
 
 
