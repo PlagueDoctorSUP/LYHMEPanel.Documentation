@@ -6,7 +6,7 @@
 Each time you make a change or changes to this file you have to reboot your server. Along with capitals and lowercases don't matter. 💪🏼
 {% endhint %}
 
-### Where Is It Located? <a id="where-is-it-located"></a>
+### File Location <a id="where-is-it-located"></a>
 
 Great question! To do this you will want to login to [lyhmepanel.com](https://lyhmepanel.com)
 
@@ -34,7 +34,7 @@ chatrate 0
 📢 Please do not change or remove the bind or port numbers.
 {% endhint %}
 
-### Change Server Name? <a id="change-server-name"></a>
+### Server Name <a id="change-server-name"></a>
 
 This feature assigns the name of the server on the server list.
 
@@ -67,7 +67,7 @@ name superCoolServer|PvE|Kits|TPA|Home
 
  That is a total of 33 characters, you can now save the file and then reboot your server and the name will be changed.
 
-### Change to PvE! <a id="change-to-pve"></a>
+### Set to PvE <a id="change-to-pve"></a>
 
 This feature disables player versus player combat in favor of player versus environment.[3](https://lyhmewiki.com/user-guide/unturned/commandsdat/#fn:3)
 
@@ -96,7 +96,7 @@ PvE
 
 You can now save the file and then reboot your server and it will be changed to PvE.
 
-### Change to PvP! <a id="change-to-pvp"></a>
+### Set to PvP <a id="change-to-pvp"></a>
 
 This feature disables player versus environment in favor of player versus player combat[3](https://lyhmewiki.com/user-guide/unturned/commandsdat/#fn:3)
 
@@ -125,7 +125,7 @@ PvP
 
 You can now save the file and then reboot your server and it will be changed to PvP.
 
-### Change the Map? <a id="change-the-map"></a>
+### Change Map <a id="change-the-map"></a>
 
 This feature sets the map that the server loads on startup.[3](https://lyhmewiki.com/user-guide/unturned/commandsdat/#fn:3)
 
@@ -165,7 +165,7 @@ map Paintball_Arena_0
 
 You can now save the file and then reboot your server and the map will be changed.
 
-### Change the Difficulty? <a id="change-the-difficulty"></a>
+### Change Difficulty <a id="change-the-difficulty"></a>
 
 This feature assigns the difficulty of your server
 
@@ -204,7 +204,7 @@ mode easy
 
 You can now save the file and then reboot your server and the mode will be changed.
 
-### Change the Perspective? <a id="change-the-perspective"></a>
+### Change Perspective <a id="change-the-perspective"></a>
 
 ```text
 name superCoolServer|PvE|Kits|TPA|Home
@@ -240,7 +240,7 @@ perspective first
 
 You can now save the file and then reboot your server and the perspective will be changed.
 
-### Set myself Owner? <a id="set-myself-owner"></a>
+### Set myself Owner <a id="set-myself-owner"></a>
 
 This feature gives admin rights to the steamid64
 
@@ -259,13 +259,15 @@ chatrate 0
 
 What we will be changing is what is highlighted above.
 
-1. You will want to do the following:
-   1. You will want to go here: [https://steamid.io/](https://steamid.io/)
-   2. Once there sign in via Steam
-   3. Once signed in click on your username to the left of `privacy`
-   4. Click on `profile`
-   5. Next, you will want to copy the number that starts with... `76561198`
-2. Now that you have your steamID64 copied add a space after the word owner and paste it.
+You will want to do the following:
+
+1. You will want to go here: [https://steamid.io/](https://steamid.io/)
+2. Once there sign in via Steam
+3. Once signed in click on your username to the left of `privacy`
+4. Click on `profile`
+5. Next, you will want to copy the number that starts with... `76561198`
+
+Now that you have your steamID64 copied add a space after the word owner and paste it.
 
 Example:
 
@@ -277,7 +279,7 @@ owner 76561198267201306
 
 _It should be similar to the example but the number above will not the exact one as each profile has a unique one. Unless you are the owner of the account above, which is Nelsons._
 
-### Change the Chat Rate? <a id="change-the-chat-rate"></a>
+### Change Chat Rate <a id="change-the-chat-rate"></a>
 
 This feature assigns a minimum time between chat messages to prevent spamming.[3](https://lyhmewiki.com/user-guide/unturned/commandsdat/#fn:3)
 
@@ -306,7 +308,7 @@ chatrate 3
 
  You can now save the file and then reboot your server and the chat rate will be different.
 
-### Enable or Disable Cheats? <a id="enable-or-disable-cheats"></a>
+### Enable or Disable Cheats <a id="enable-or-disable-cheats"></a>
 
 This feature allows your server to access certain commands such as Give.[3](https://lyhmewiki.com/user-guide/unturned/commandsdat/#fn:3)
 
@@ -326,13 +328,11 @@ cheats
 
 What we will be changing is what is highlighted above.
 
-1.
-
-Danger
-
+{% hint style="danger" %}
 Not Done!
+{% endhint %}
 
-### Enable Gold Only? <a id="enable-gold-only"></a>
+### Enable Gold Only <a id="enable-gold-only"></a>
 
 This feature restricts the server to only allow Gold players.[3](https://lyhmewiki.com/user-guide/unturned/commandsdat/#fn:3)
 
@@ -340,7 +340,7 @@ This feature restricts the server to only allow Gold players.[3](https://lyhmewi
 Not Done!
 {% endhint %}
 
-### Hide Admins? <a id="hide-admins"></a>
+### Hide Admins <a id="hide-admins"></a>
 
 This feature allows admins to appear as if they are normal players. Also allows the recording of cinematic footage without the admin labels visible to players.[3](https://lyhmewiki.com/user-guide/unturned/commandsdat/#fn:3)
 
@@ -348,7 +348,7 @@ This feature allows admins to appear as if they are normal players. Also allows 
 Not Done!
 {% endhint %}
 
-### Enable a Loadout? <a id="enable-a-loadout"></a>
+### Enable a Loadout <a id="enable-a-loadout"></a>
 
 This feature gives players each item when spawning.[3](https://lyhmewiki.com/user-guide/unturned/commandsdat/#fn:3)
 
@@ -356,7 +356,7 @@ This feature gives players each item when spawning.[3](https://lyhmewiki.com/use
 Not Done!
 {% endhint %}
 
-### Enable a Password? <a id="enable-a-password"></a>
+### Enable a Password <a id="enable-a-password"></a>
 
 This feature assigns the codeword required for entry to the server
 
