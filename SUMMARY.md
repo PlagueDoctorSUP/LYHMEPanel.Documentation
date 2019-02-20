@@ -5,7 +5,7 @@
 
 ## Unturned
 
-* [Commands.dat](unturned/commands.dat.md)
-* [Config.json](unturned/untitled.md)
+* [Commands.dat](unturned/commands.dat/README.md)
+  * [Config.json](unturned/commands.dat/untitled.md)
 * [RocketMod 4](unturned/rocketmod-4.md)
 
