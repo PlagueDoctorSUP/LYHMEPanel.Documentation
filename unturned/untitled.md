@@ -1,68 +1,579 @@
-# Untitled
+# Config.json
 
-{% api-method method="get" host="https://api.cakes.com" path="/v1/cakes/:id" %}
-{% api-method-summary %}
-Get Cakes
-{% endapi-method-summary %}
+So, You would like to change some different aspects of server, maybe even the adding an icon or a thumbnail and other things lets do that!
 
-{% api-method-description %}
-This endpoint allows you to get free cakes.
-{% endapi-method-description %}
+{% hint style="info" %}
+Each time you make a change or changes to this file you have to reboot your server.
+{% endhint %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="LYHME" type="string" %}
-HI THERE
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+### Where Is It Located? <a id="where-is-it-located"></a>
 
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-Authentication token to track down who is emptying our stocks.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+Great question! To do this you will want to login to [lyhmepanel.com](https://lyhmepanel.com)
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="recipe" type="string" %}
-The API will do its best to find a cake matching the provided recipe.
-{% endapi-method-parameter %}
+1. Click on [Game Services](http://lyhmepanel.com/Interface/GameHosting/GameServers.aspx) under Game & Voice Management then if you have more then one server select the one you want to change
+2. Save and then stop your service then click on `Configuration Files` then to the left of `Config.json` Click on `[ Text Editor ]`
 
-{% api-method-parameter name="gluten" type="boolean" %}
-Whether the cake should be gluten-free or not.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
+Now you are there! Nice work.
 
 ```javascript
 {
-    "name": "Cake's name",
-    "recipe": "Cake's recipe name",
-    "cake": "Binary cake"
+  "Browser": {
+    "Icon": "",
+    "Thumbnail": "",
+    "Desc_Hint": "",
+    "Desc_Full": "",
+    "Desc_Server_List": ""
+  },
+  "Server": {
+    "VAC_Secure": true,
+    "BattlEye_Secure": true,
+    "Max_Ping_Milliseconds": 750,
+    "Timeout_Queue_Seconds": 15.0,
+    "Timeout_Game_Seconds": 30.0,
+    "Max_Packets_Per_Second": 50.0
+  },
+  "Easy": {
+    "Items": {
+      "Spawn_Chance": 0.35,
+      "Despawn_Dropped_Time": 600.0,
+      "Despawn_Natural_Time": 900.0,
+      "Respawn_Time": 30.0,
+      "Quality_Full_Chance": 0.1,
+      "Quality_Multiplier": 1.0,
+      "Gun_Bullets_Full_Chance": 0.1,
+      "Gun_Bullets_Multiplier": 1.0,
+      "Magazine_Bullets_Full_Chance": 0.1,
+      "Magazine_Bullets_Multiplier": 1.0,
+      "Crate_Bullets_Full_Chance": 0.1,
+      "Crate_Bullets_Multiplier": 1.0,
+      "Has_Durability": false
+    },
+    "Vehicles": {
+      "Has_Battery_Chance": 1.0,
+      "Min_Battery_Charge": 0.8,
+      "Max_Battery_Charge": 1.0,
+      "Has_Tire_Chance": 1.0,
+      "Respawn_Time": 300.0,
+      "Unlocked_After_Seconds_In_Safezone": 3600.0,
+      "Armor_Multiplier": 1.0,
+      "Gun_Lowcal_Damage_Multiplier": 1.0,
+      "Gun_Highcal_Damage_Multiplier": 1.0,
+      "Melee_Damage_Multiplier": 1.0,
+      "Max_Instances_Tiny": 4,
+      "Max_Instances_Small": 8,
+      "Max_Instances_Medium": 16,
+      "Max_Instances_Large": 32,
+      "Max_Instances_Insane": 64
+    },
+    "Zombies": {
+      "Spawn_Chance": 0.2,
+      "Loot_Chance": 0.55,
+      "Crawler_Chance": 0.0,
+      "Sprinter_Chance": 0.0,
+      "Flanker_Chance": 0.0,
+      "Burner_Chance": 0.0,
+      "Acid_Chance": 0.0,
+      "Boss_Electric_Chance": 0.0,
+      "Boss_Wind_Chance": 0.0,
+      "Boss_Fire_Chance": 0.0,
+      "Spirit_Chance": 0.0,
+      "Respawn_Day_Time": 360.0,
+      "Respawn_Night_Time": 30.0,
+      "Respawn_Beacon_Time": 0.0,
+      "Damage_Multiplier": 0.75,
+      "Armor_Multiplier": 1.25,
+      "Backstab_Multiplier": 1.25,
+      "Beacon_Experience_Multiplier": 1.0,
+      "Full_Moon_Experience_Multiplier": 2.0,
+      "Min_Drops": 1,
+      "Max_Drops": 1,
+      "Min_Mega_Drops": 5,
+      "Max_Mega_Drops": 5,
+      "Min_Boss_Drops": 8,
+      "Max_Boss_Drops": 10,
+      "Slow_Movement": true,
+      "Can_Stun": true,
+      "Weapons_Use_Player_Damage": false,
+      "Beacon_Max_Rewards": 0,
+      "Beacon_Max_Participants": 0,
+      "Beacon_Rewards_Multiplier": 1.0
+    },
+    "Animals": {
+      "Respawn_Time": 180.0,
+      "Damage_Multiplier": 0.75,
+      "Armor_Multiplier": 1.25,
+      "Max_Instances_Tiny": 4,
+      "Max_Instances_Small": 8,
+      "Max_Instances_Medium": 16,
+      "Max_Instances_Large": 32,
+      "Max_Instances_Insane": 64,
+      "Weapons_Use_Player_Damage": false
+    },
+    "Barricades": {
+      "Decay_Time": 604800,
+      "Armor_Multiplier": 1.0,
+      "Gun_Lowcal_Damage_Multiplier": 1.0,
+      "Gun_Highcal_Damage_Multiplier": 1.0,
+      "Melee_Damage_Multiplier": 1.0
+    },
+    "Structures": {
+      "Decay_Time": 604800,
+      "Armor_Multiplier": 1.0,
+      "Gun_Lowcal_Damage_Multiplier": 1.0,
+      "Gun_Highcal_Damage_Multiplier": 1.0,
+      "Melee_Damage_Multiplier": 1.0
+    },
+    "Players": {
+      "Health_Regen_Min_Food": 90,
+      "Health_Regen_Min_Water": 90,
+      "Health_Regen_Ticks": 60,
+      "Food_Use_Ticks": 350,
+      "Food_Damage_Ticks": 15,
+      "Water_Use_Ticks": 320,
+      "Water_Damage_Ticks": 20,
+      "Virus_Infect": 50,
+      "Virus_Use_Ticks": 125,
+      "Virus_Damage_Ticks": 25,
+      "Leg_Regen_Ticks": 750,
+      "Bleed_Damage_Ticks": 10,
+      "Bleed_Regen_Ticks": 750,
+      "Armor_Multiplier": 1.0,
+      "Experience_Multiplier": 1.5,
+      "Detect_Radius_Multiplier": 0.5,
+      "Ray_Aggressor_Distance": 8.0,
+      "Lose_Skills_PvP": 0.75,
+      "Lose_Skills_PvE": 0.75,
+      "Lose_Items_PvP": 1.0,
+      "Lose_Items_PvE": 1.0,
+      "Lose_Clothes_PvP": true,
+      "Lose_Clothes_PvE": true,
+      "Can_Hurt_Legs": true,
+      "Can_Break_Legs": false,
+      "Can_Fix_Legs": true,
+      "Can_Start_Bleeding": false,
+      "Can_Stop_Bleeding": true,
+      "Spawn_With_Max_Skills": false,
+      "Spawn_With_Stamina_Skills": false
+    },
+    "Objects": {
+      "Binary_State_Reset_Multiplier": 1.0,
+      "Fuel_Reset_Multiplier": 1.0,
+      "Water_Reset_Multiplier": 1.0,
+      "Resource_Reset_Multiplier": 1.0,
+      "Rubble_Reset_Multiplier": 1.0
+    },
+    "Events": {
+      "Rain_Frequency_Min": 2.3,
+      "Rain_Frequency_Max": 5.6,
+      "Rain_Duration_Min": 0.05,
+      "Rain_Duration_Max": 0.15,
+      "Snow_Frequency_Min": 1.3,
+      "Snow_Frequency_Max": 4.6,
+      "Snow_Duration_Min": 0.2,
+      "Snow_Duration_Max": 0.5,
+      "Airdrop_Frequency_Min": 0.8,
+      "Airdrop_Frequency_Max": 6.5,
+      "Airdrop_Speed": 128.0,
+      "Airdrop_Force": 9.5,
+      "Arena_Min_Players": 2,
+      "Arena_Compactor_Damage": 10,
+      "Arena_Clear_Timer": 5,
+      "Arena_Finale_Timer": 10,
+      "Arena_Restart_Timer": 15,
+      "Arena_Compactor_Delay_Timer": 1,
+      "Arena_Compactor_Pause_Timer": 5,
+      "Arena_Use_Airdrops": true,
+      "Arena_Use_Compactor_Pause": true,
+      "Arena_Compactor_Speed_Tiny": 0.5,
+      "Arena_Compactor_Speed_Small": 1.5,
+      "Arena_Compactor_Speed_Medium": 3.0,
+      "Arena_Compactor_Speed_Large": 4.5,
+      "Arena_Compactor_Speed_Insane": 6.0,
+      "Arena_Compactor_Shrink_Factor": 0.5
+    },
+    "Gameplay": {
+      "Repair_Level_Max": 3,
+      "Hitmarkers": true,
+      "Crosshair": true,
+      "Ballistics": false,
+      "Chart": true,
+      "Satellite": false,
+      "Compass": false,
+      "Group_Map": true,
+      "Group_HUD": true,
+      "Allow_Static_Groups": true,
+      "Allow_Dynamic_Groups": true,
+      "Allow_Shoulder_Camera": true,
+      "Can_Suicide": true,
+      "Timer_Exit": 10,
+      "Timer_Respawn": 10,
+      "Timer_Home": 30,
+      "Timer_Leave_Group": 30,
+      "Max_Group_Members": 0
+    }
+  },
+  "Normal": {
+    "Items": {
+      "Spawn_Chance": 0.35,
+      "Despawn_Dropped_Time": 600.0,
+      "Despawn_Natural_Time": 900.0,
+      "Respawn_Time": 45.0,
+      "Quality_Full_Chance": 0.1,
+      "Quality_Multiplier": 1.0,
+      "Gun_Bullets_Full_Chance": 0.05,
+      "Gun_Bullets_Multiplier": 0.25,
+      "Magazine_Bullets_Full_Chance": 0.05,
+      "Magazine_Bullets_Multiplier": 0.5,
+      "Crate_Bullets_Full_Chance": 0.05,
+      "Crate_Bullets_Multiplier": 1.0,
+      "Has_Durability": true
+    },
+    "Vehicles": {
+      "Has_Battery_Chance": 0.8,
+      "Min_Battery_Charge": 0.5,
+      "Max_Battery_Charge": 0.75,
+      "Has_Tire_Chance": 0.85,
+      "Respawn_Time": 300.0,
+      "Unlocked_After_Seconds_In_Safezone": 3600.0,
+      "Armor_Multiplier": 1.0,
+      "Gun_Lowcal_Damage_Multiplier": 1.0,
+      "Gun_Highcal_Damage_Multiplier": 1.0,
+      "Melee_Damage_Multiplier": 1.0,
+      "Max_Instances_Tiny": 4,
+      "Max_Instances_Small": 8,
+      "Max_Instances_Medium": 16,
+      "Max_Instances_Large": 32,
+      "Max_Instances_Insane": 64
+    },
+    "Zombies": {
+      "Spawn_Chance": 0.25,
+      "Loot_Chance": 0.5,
+      "Crawler_Chance": 0.15,
+      "Sprinter_Chance": 0.15,
+      "Flanker_Chance": 0.025,
+      "Burner_Chance": 0.025,
+      "Acid_Chance": 0.025,
+      "Boss_Electric_Chance": 0.0,
+      "Boss_Wind_Chance": 0.0,
+      "Boss_Fire_Chance": 0.0,
+      "Spirit_Chance": 0.0,
+      "Respawn_Day_Time": 360.0,
+      "Respawn_Night_Time": 30.0,
+      "Respawn_Beacon_Time": 0.0,
+      "Damage_Multiplier": 1.0,
+      "Armor_Multiplier": 1.0,
+      "Backstab_Multiplier": 1.25,
+      "Beacon_Experience_Multiplier": 1.0,
+      "Full_Moon_Experience_Multiplier": 2.0,
+      "Min_Drops": 1,
+      "Max_Drops": 1,
+      "Min_Mega_Drops": 5,
+      "Max_Mega_Drops": 5,
+      "Min_Boss_Drops": 8,
+      "Max_Boss_Drops": 10,
+      "Slow_Movement": false,
+      "Can_Stun": true,
+      "Weapons_Use_Player_Damage": false,
+      "Beacon_Max_Rewards": 0,
+      "Beacon_Max_Participants": 0,
+      "Beacon_Rewards_Multiplier": 1.0
+    },
+    "Animals": {
+      "Respawn_Time": 180.0,
+      "Damage_Multiplier": 1.0,
+      "Armor_Multiplier": 1.0,
+      "Max_Instances_Tiny": 4,
+      "Max_Instances_Small": 8,
+      "Max_Instances_Medium": 16,
+      "Max_Instances_Large": 32,
+      "Max_Instances_Insane": 64,
+      "Weapons_Use_Player_Damage": false
+    },
+    "Barricades": {
+      "Decay_Time": 604800,
+      "Armor_Multiplier": 1.0,
+      "Gun_Lowcal_Damage_Multiplier": 1.0,
+      "Gun_Highcal_Damage_Multiplier": 1.0,
+      "Melee_Damage_Multiplier": 1.0
+    },
+    "Structures": {
+      "Decay_Time": 604800,
+      "Armor_Multiplier": 1.0,
+      "Gun_Lowcal_Damage_Multiplier": 1.0,
+      "Gun_Highcal_Damage_Multiplier": 1.0,
+      "Melee_Damage_Multiplier": 1.0
+    },
+    "Players": {
+      "Health_Regen_Min_Food": 90,
+      "Health_Regen_Min_Water": 90,
+      "Health_Regen_Ticks": 60,
+      "Food_Use_Ticks": 300,
+      "Food_Damage_Ticks": 15,
+      "Water_Use_Ticks": 270,
+      "Water_Damage_Ticks": 20,
+      "Virus_Infect": 50,
+      "Virus_Use_Ticks": 125,
+      "Virus_Damage_Ticks": 25,
+      "Leg_Regen_Ticks": 750,
+      "Bleed_Damage_Ticks": 10,
+      "Bleed_Regen_Ticks": 750,
+      "Armor_Multiplier": 1.0,
+      "Experience_Multiplier": 1.0,
+      "Detect_Radius_Multiplier": 1.0,
+      "Ray_Aggressor_Distance": 8.0,
+      "Lose_Skills_PvP": 0.75,
+      "Lose_Skills_PvE": 0.75,
+      "Lose_Items_PvP": 1.0,
+      "Lose_Items_PvE": 1.0,
+      "Lose_Clothes_PvP": true,
+      "Lose_Clothes_PvE": true,
+      "Can_Hurt_Legs": true,
+      "Can_Break_Legs": true,
+      "Can_Fix_Legs": true,
+      "Can_Start_Bleeding": true,
+      "Can_Stop_Bleeding": true,
+      "Spawn_With_Max_Skills": false,
+      "Spawn_With_Stamina_Skills": false
+    },
+    "Objects": {
+      "Binary_State_Reset_Multiplier": 1.0,
+      "Fuel_Reset_Multiplier": 1.0,
+      "Water_Reset_Multiplier": 1.0,
+      "Resource_Reset_Multiplier": 1.0,
+      "Rubble_Reset_Multiplier": 1.0
+    },
+    "Events": {
+      "Rain_Frequency_Min": 2.3,
+      "Rain_Frequency_Max": 5.6,
+      "Rain_Duration_Min": 0.05,
+      "Rain_Duration_Max": 0.15,
+      "Snow_Frequency_Min": 1.3,
+      "Snow_Frequency_Max": 4.6,
+      "Snow_Duration_Min": 0.2,
+      "Snow_Duration_Max": 0.5,
+      "Airdrop_Frequency_Min": 0.8,
+      "Airdrop_Frequency_Max": 6.5,
+      "Airdrop_Speed": 128.0,
+      "Airdrop_Force": 9.5,
+      "Arena_Min_Players": 2,
+      "Arena_Compactor_Damage": 10,
+      "Arena_Clear_Timer": 5,
+      "Arena_Finale_Timer": 10,
+      "Arena_Restart_Timer": 15,
+      "Arena_Compactor_Delay_Timer": 1,
+      "Arena_Compactor_Pause_Timer": 5,
+      "Arena_Use_Airdrops": true,
+      "Arena_Use_Compactor_Pause": true,
+      "Arena_Compactor_Speed_Tiny": 0.5,
+      "Arena_Compactor_Speed_Small": 1.5,
+      "Arena_Compactor_Speed_Medium": 3.0,
+      "Arena_Compactor_Speed_Large": 4.5,
+      "Arena_Compactor_Speed_Insane": 6.0,
+      "Arena_Compactor_Shrink_Factor": 0.5
+    },
+    "Gameplay": {
+      "Repair_Level_Max": 3,
+      "Hitmarkers": true,
+      "Crosshair": true,
+      "Ballistics": true,
+      "Chart": false,
+      "Satellite": false,
+      "Compass": false,
+      "Group_Map": true,
+      "Group_HUD": true,
+      "Allow_Static_Groups": true,
+      "Allow_Dynamic_Groups": true,
+      "Allow_Shoulder_Camera": true,
+      "Can_Suicide": true,
+      "Timer_Exit": 10,
+      "Timer_Respawn": 10,
+      "Timer_Home": 30,
+      "Timer_Leave_Group": 30,
+      "Max_Group_Members": 0
+    }
+  },
+  "Hard": {
+    "Items": {
+      "Spawn_Chance": 0.15,
+      "Despawn_Dropped_Time": 600.0,
+      "Despawn_Natural_Time": 900.0,
+      "Respawn_Time": 60.0,
+      "Quality_Full_Chance": 0.01,
+      "Quality_Multiplier": 1.0,
+      "Gun_Bullets_Full_Chance": 0.025,
+      "Gun_Bullets_Multiplier": 0.1,
+      "Magazine_Bullets_Full_Chance": 0.025,
+      "Magazine_Bullets_Multiplier": 0.25,
+      "Crate_Bullets_Full_Chance": 0.025,
+      "Crate_Bullets_Multiplier": 0.75,
+      "Has_Durability": true
+    },
+    "Vehicles": {
+      "Has_Battery_Chance": 0.25,
+      "Min_Battery_Charge": 0.1,
+      "Max_Battery_Charge": 0.3,
+      "Has_Tire_Chance": 0.7,
+      "Respawn_Time": 300.0,
+      "Unlocked_After_Seconds_In_Safezone": 3600.0,
+      "Armor_Multiplier": 1.0,
+      "Gun_Lowcal_Damage_Multiplier": 1.0,
+      "Gun_Highcal_Damage_Multiplier": 1.0,
+      "Melee_Damage_Multiplier": 1.0,
+      "Max_Instances_Tiny": 4,
+      "Max_Instances_Small": 8,
+      "Max_Instances_Medium": 16,
+      "Max_Instances_Large": 32,
+      "Max_Instances_Insane": 64
+    },
+    "Zombies": {
+      "Spawn_Chance": 0.3,
+      "Loot_Chance": 0.3,
+      "Crawler_Chance": 0.125,
+      "Sprinter_Chance": 0.175,
+      "Flanker_Chance": 0.05,
+      "Burner_Chance": 0.05,
+      "Acid_Chance": 0.05,
+      "Boss_Electric_Chance": 0.0,
+      "Boss_Wind_Chance": 0.0,
+      "Boss_Fire_Chance": 0.0,
+      "Spirit_Chance": 0.0,
+      "Respawn_Day_Time": 360.0,
+      "Respawn_Night_Time": 30.0,
+      "Respawn_Beacon_Time": 0.0,
+      "Damage_Multiplier": 1.5,
+      "Armor_Multiplier": 0.75,
+      "Backstab_Multiplier": 1.25,
+      "Beacon_Experience_Multiplier": 1.0,
+      "Full_Moon_Experience_Multiplier": 2.0,
+      "Min_Drops": 1,
+      "Max_Drops": 1,
+      "Min_Mega_Drops": 5,
+      "Max_Mega_Drops": 5,
+      "Min_Boss_Drops": 8,
+      "Max_Boss_Drops": 10,
+      "Slow_Movement": false,
+      "Can_Stun": false,
+      "Weapons_Use_Player_Damage": true,
+      "Beacon_Max_Rewards": 0,
+      "Beacon_Max_Participants": 0,
+      "Beacon_Rewards_Multiplier": 1.0
+    },
+    "Animals": {
+      "Respawn_Time": 180.0,
+      "Damage_Multiplier": 1.5,
+      "Armor_Multiplier": 0.75,
+      "Max_Instances_Tiny": 4,
+      "Max_Instances_Small": 8,
+      "Max_Instances_Medium": 16,
+      "Max_Instances_Large": 32,
+      "Max_Instances_Insane": 64,
+      "Weapons_Use_Player_Damage": true
+    },
+    "Barricades": {
+      "Decay_Time": 604800,
+      "Armor_Multiplier": 1.0,
+      "Gun_Lowcal_Damage_Multiplier": 1.0,
+      "Gun_Highcal_Damage_Multiplier": 1.0,
+      "Melee_Damage_Multiplier": 1.0
+    },
+    "Structures": {
+      "Decay_Time": 604800,
+      "Armor_Multiplier": 1.0,
+      "Gun_Lowcal_Damage_Multiplier": 1.0,
+      "Gun_Highcal_Damage_Multiplier": 1.0,
+      "Melee_Damage_Multiplier": 1.0
+    },
+    "Players": {
+      "Health_Regen_Min_Food": 90,
+      "Health_Regen_Min_Water": 90,
+      "Health_Regen_Ticks": 60,
+      "Food_Use_Ticks": 250,
+      "Food_Damage_Ticks": 15,
+      "Water_Use_Ticks": 220,
+      "Water_Damage_Ticks": 20,
+      "Virus_Infect": 50,
+      "Virus_Use_Ticks": 125,
+      "Virus_Damage_Ticks": 25,
+      "Leg_Regen_Ticks": 750,
+      "Bleed_Damage_Ticks": 10,
+      "Bleed_Regen_Ticks": 750,
+      "Armor_Multiplier": 1.0,
+      "Experience_Multiplier": 1.5,
+      "Detect_Radius_Multiplier": 1.25,
+      "Ray_Aggressor_Distance": 8.0,
+      "Lose_Skills_PvP": 0.75,
+      "Lose_Skills_PvE": 0.75,
+      "Lose_Items_PvP": 1.0,
+      "Lose_Items_PvE": 1.0,
+      "Lose_Clothes_PvP": true,
+      "Lose_Clothes_PvE": true,
+      "Can_Hurt_Legs": true,
+      "Can_Break_Legs": true,
+      "Can_Fix_Legs": false,
+      "Can_Start_Bleeding": true,
+      "Can_Stop_Bleeding": false,
+      "Spawn_With_Max_Skills": false,
+      "Spawn_With_Stamina_Skills": false
+    },
+    "Objects": {
+      "Binary_State_Reset_Multiplier": 1.0,
+      "Fuel_Reset_Multiplier": 1.0,
+      "Water_Reset_Multiplier": 1.0,
+      "Resource_Reset_Multiplier": 1.0,
+      "Rubble_Reset_Multiplier": 1.0
+    },
+    "Events": {
+      "Rain_Frequency_Min": 2.3,
+      "Rain_Frequency_Max": 5.6,
+      "Rain_Duration_Min": 0.05,
+      "Rain_Duration_Max": 0.15,
+      "Snow_Frequency_Min": 1.3,
+      "Snow_Frequency_Max": 4.6,
+      "Snow_Duration_Min": 0.2,
+      "Snow_Duration_Max": 0.5,
+      "Airdrop_Frequency_Min": 0.8,
+      "Airdrop_Frequency_Max": 6.5,
+      "Airdrop_Speed": 128.0,
+      "Airdrop_Force": 9.5,
+      "Arena_Min_Players": 2,
+      "Arena_Compactor_Damage": 10,
+      "Arena_Clear_Timer": 5,
+      "Arena_Finale_Timer": 10,
+      "Arena_Restart_Timer": 15,
+      "Arena_Compactor_Delay_Timer": 1,
+      "Arena_Compactor_Pause_Timer": 5,
+      "Arena_Use_Airdrops": true,
+      "Arena_Use_Compactor_Pause": true,
+      "Arena_Compactor_Speed_Tiny": 0.5,
+      "Arena_Compactor_Speed_Small": 1.5,
+      "Arena_Compactor_Speed_Medium": 3.0,
+      "Arena_Compactor_Speed_Large": 4.5,
+      "Arena_Compactor_Speed_Insane": 6.0,
+      "Arena_Compactor_Shrink_Factor": 0.5
+    },
+    "Gameplay": {
+      "Repair_Level_Max": 3,
+      "Hitmarkers": false,
+      "Crosshair": false,
+      "Ballistics": true,
+      "Chart": false,
+      "Satellite": false,
+      "Compass": false,
+      "Group_Map": false,
+      "Group_HUD": true,
+      "Allow_Static_Groups": true,
+      "Allow_Dynamic_Groups": true,
+      "Allow_Shoulder_Camera": true,
+      "Can_Suicide": true,
+      "Timer_Exit": 10,
+      "Timer_Respawn": 10,
+      "Timer_Home": 30,
+      "Timer_Leave_Group": 30,
+      "Max_Group_Members": 0
+    }
+  }
 }
 ```
-{% endapi-method-response-example %}
 
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
-```javascript
-{
-    "message": "Ain't no cake like that."
-}
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
+ Here is an example of what yours should look like.
 
