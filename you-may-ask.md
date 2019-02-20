@@ -33,3 +33,12 @@ What you will want to do is login to [lyhmehosting.com](https://billing.lyhmehos
 
 Thank you for reporting that, we will get back to you soon.
 
+## Two-Step Verification
+
+What you will want to do is login to [lyhmepanel.com](https://lyhmepanel.com)
+
+1. Click on [Account Security](http://lyhmepanel.com/Interface/Base/ChangePassword.aspx) under Account Information then Two-Step Verification
+2. Click the checkbox on where it says `Enable two-step verification`
+
+From there please follow the directions, good luck!
+

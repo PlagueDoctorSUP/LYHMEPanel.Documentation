@@ -43,12 +43,3 @@ If you have forgotten your password you can recover it [here](http://lyhmepanel.
 
 That's it, Your password is now changed!
 
-### Two-Step Verification <a id="enable-two-step-verification"></a>
-
-What you will want to do is login to [lyhmepanel.com](https://lyhmepanel.com)
-
-1. Click on [Account Security](http://lyhmepanel.com/Interface/Base/ChangePassword.aspx) under Account Information then Two-Step Verification
-2. Click the checkbox on where it says `Enable two-step verification`
-
-From there please follow the directions, good luck!
-
