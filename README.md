@@ -1,8 +1,14 @@
 # Home
 
+{% hint style="danger" %}
+You do not literally type out `<> {} []` etc.
+{% endhint %}
+
 {% hint style="info" %}
 This documentation is currently under development.
 {% endhint %}
+
+### 
 
 ### Useful Links
 
