@@ -1,24 +1,25 @@
 # Getting Started
 
-Hey there, Welcome to the LYHME Panel section of our user guide. Are you wanting to get started on setting up your server? Let's get started!
+Are you wanting to get started on setting up your server? Let's get started!
 
 {% hint style="info" %}
 If your question isn't listed please open a support ticket!
 {% endhint %}
 
-### Purchased a Server What's Next? <a id="purchased-a-server-whats-next"></a>
+### Purchased a Server <a id="purchased-a-server-whats-next"></a>
 
 Nice work navigating that!
 
-You will want to login to your email account, the one you signed up with! Once done, please now wait for an email from us! This will take **roughly** around ~11 minutes to complete if the purchase was successful. If you have not received an email check your spam folder first, and if nothing open a [support ticket](https://billing.lyhmehosting.com/submitticket.php?step=2&deptid=1) and we can get it investigated!
+Your server will now begin to be setup, please wait for an email from us! This will **roughly** take around ~11 minutes to complete if the purchase was successful. If you have not received an email from us check your spam folder, and if nothing open a [support ticket](https://billing.lyhmehosting.com/submitticket.php?step=2&deptid=1) and we can get this investigated!
 
-> Why so long? Our system automatically gets your server all setup for you do it what you would like to do! Such as downloading the latest version of the game from steam!
+> Why does it take so long?   
+> Our system automatically downloads the latest version of the game, along with other things.
 
 Once you receive the email, it will contain the username, password, and your server details.
 
-### Creating a Sub Account? <a id="creating-a-sub-account"></a>
+### Adding Sub Users <a id="creating-a-sub-account"></a>
 
-So you would like to create an account for your friend but do not want to give him access to your own account what do you do?
+So you would like to create an account for your friend or developer but do not want to give him access to your own account what do you do?
 
 What you will want to do is login to [lyhmepanel.com](https://lyhmepanel.com)
 
@@ -30,7 +31,7 @@ What you will want to do is login to [lyhmepanel.com](https://lyhmepanel.com)
 
 You did it! Nice job, the sub-user has been created!
 
-### Change My Password? <a id="change-my-password"></a>
+### Changing My Password <a id="change-my-password"></a>
 
 What you will want to do is login to [lyhmepanel.com](https://lyhmepanel.com)
 
@@ -42,7 +43,7 @@ If you have forgotten your password you can recover it [here](http://lyhmepanel.
 
 That's it, Your password is now changed!
 
-### Enable Two-Step Verification? <a id="enable-two-step-verification"></a>
+### Two-Step Verification <a id="enable-two-step-verification"></a>
 
 What you will want to do is login to [lyhmepanel.com](https://lyhmepanel.com)
 
@@ -51,7 +52,7 @@ What you will want to do is login to [lyhmepanel.com](https://lyhmepanel.com)
 
 From there please follow the directions, good luck!
 
-### Receiving MySQL Details? <a id="receiving-mysql-details"></a>
+### Receiving MySQL Details <a id="receiving-mysql-details"></a>
 
 What you will want to do is login to [lyhmehosting.com](https://billing.lyhmehosting.com/clientarea.php)
 
@@ -61,9 +62,9 @@ What you will want to do is login to [lyhmehosting.com](https://billing.lyhmehos
 4. For the message, please input the **location** of where your server is located
 5. Then click submit
 
-You did it! Woop woop, we will get back to you soon.
+You did it! Whoop whoop, we will get back to you soon.
 
-### Updating My Server? <a id="updating-my-server"></a>
+### Updating My Server <a id="updating-my-server"></a>
 
 When you try to join your server does it say wrong version or its out of date? To fix that you want to do is login to [lyhmepanel.com](https://lyhmepanel.com)
 

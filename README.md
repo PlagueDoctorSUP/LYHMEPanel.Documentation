@@ -1,7 +1,5 @@
 # Home
 
-### The following pages documents on how to use LYHMEPanel \(TCAdmin 2\)
-
 {% hint style="info" %}
 This documentation is currently under development.
 {% endhint %}
