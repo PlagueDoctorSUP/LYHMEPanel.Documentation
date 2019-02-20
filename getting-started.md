@@ -52,15 +52,3 @@ What you will want to do is login to [lyhmepanel.com](https://lyhmepanel.com)
 
 From there please follow the directions, good luck!
 
-### Receiving MySQL Details <a id="receiving-mysql-details"></a>
-
-What you will want to do is login to [lyhmehosting.com](https://billing.lyhmehosting.com/clientarea.php)
-
-1. You will want to open a [support ticket](https://billing.lyhmehosting.com/submitticket.php?step=2&deptid=1)
-2. For the subject input `REQUESTING MySQL Details`
-3. You can leave the department and priority alone
-4. For the message, please input the **location** of where your server is located
-5. Then click submit
-
-You did it! Whoop whoop, we will get back to you soon.
-
