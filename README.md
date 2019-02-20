@@ -16,7 +16,7 @@ This documentation is currently under development.
 
 ### Getting Help
 
-If you find yourself stuck and you are unsure what to do or want to report incorrect information join our discord server  above, you can even add improvements. ❤️  
+If you find yourself stuck and you are unsure what to do or want to report incorrect information join our discord server above, you can even add improvements.  
   
 -- LYHME Team
 
