@@ -6,10 +6,10 @@
 
 ## Unturned
 
-* [Default Configurations](unturned/placeholder/README.md)
-  * [Commands.dat](unturned/placeholder/commands.dat.md)
-  * [Config.json](unturned/placeholder/untitled.md)
-  * [WorkshopDownloadIDs.json](unturned/placeholder/workshopdownloadids.json.md)
+* [Default Configurations](unturned/default-configurations/README.md)
+  * [Commands.dat](unturned/default-configurations/commands.dat.md)
+  * [Config.json](unturned/default-configurations/untitled.md)
+  * [WorkshopDownloadIDs.json](unturned/default-configurations/workshopdownloadids.json.md)
 * [RocketMod 4](unturned/rocketmod-4/README.md)
   * [Permissions](unturned/rocketmod-4/permissions.md)
 
