@@ -1,2 +1,2 @@
-# Vanilla Configurations
+# Base Configurations
 

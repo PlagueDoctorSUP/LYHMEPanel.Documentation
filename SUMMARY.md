@@ -5,7 +5,7 @@
 
 ## Unturned
 
-* [Vanilla Configurations](unturned/placeholder/README.md)
+* [Base Configurations](unturned/placeholder/README.md)
   * [Commands.dat](unturned/placeholder/commands.dat.md)
   * [Config.json](unturned/placeholder/untitled.md)
   * [WorkshopDownloadIDs.json](unturned/placeholder/workshopdownloadids.json.md)
