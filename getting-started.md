@@ -6,7 +6,7 @@ Hey there, Welcome to the LYHME Panel section of our user guide. Are you wanting
 If your question isn't listed please open a support ticket!
 {% endhint %}
 
-### Purchased a server what's next? <a id="purchased-a-server-whats-next"></a>
+### Purchased a Server What's Next? <a id="purchased-a-server-whats-next"></a>
 
 Nice work navigating that!
 
@@ -16,7 +16,7 @@ You will want to login to your email account, the one you signed up with! Once d
 
 Once you receive the email, it will contain the username, password, and your server details.
 
-### Creating a sub account? <a id="creating-a-sub-account"></a>
+### Creating a Sub Account? <a id="creating-a-sub-account"></a>
 
 So you would like to create an account for your friend but do not want to give him access to your own account what do you do?
 
@@ -30,7 +30,7 @@ What you will want to do is login to [lyhmepanel.com](https://lyhmepanel.com)
 
 You did it! Nice job, the sub-user has been created!
 
-### Change my password? <a id="change-my-password"></a>
+### Change My Password? <a id="change-my-password"></a>
 
 What you will want to do is login to [lyhmepanel.com](https://lyhmepanel.com)
 
@@ -51,13 +51,9 @@ What you will want to do is login to [lyhmepanel.com](https://lyhmepanel.com)
 
 From there please follow the directions, good luck!
 
-### Receiving MySQL details? <a id="receiving-mysql-details"></a>
+### Receiving MySQL Details? <a id="receiving-mysql-details"></a>
 
 What you will want to do is login to [lyhmehosting.com](https://billing.lyhmehosting.com/clientarea.php)
-
-Tip
-
-If you have two services in the same region you can use the same details that were already generated.
 
 1. You will want to open a [support ticket](https://billing.lyhmehosting.com/submitticket.php?step=2&deptid=1)
 2. For the subject input `REQUESTING MySQL Details`
@@ -67,7 +63,7 @@ If you have two services in the same region you can use the same details that we
 
 You did it! Woop woop, we will get back to you soon.
 
-### Updating my server? <a id="updating-my-server"></a>
+### Updating My Server? <a id="updating-my-server"></a>
 
 When you try to join your server does it say wrong version or its out of date? To fix that you want to do is login to [lyhmepanel.com](https://lyhmepanel.com)
 
@@ -76,7 +72,7 @@ When you try to join your server does it say wrong version or its out of date? T
 
 Give it some time and then your service will be updated to the latest release of the game then click the `x` to close on the popup!
 
-### Server status is "Unknown" <a id="server-status-is-unknown"></a>
+### Server Status Is "Unknown" <a id="server-status-is-unknown"></a>
 
 What you will want to do is login to [lyhmehosting.com](https://billing.lyhmehosting.com/clientarea.php)
 
