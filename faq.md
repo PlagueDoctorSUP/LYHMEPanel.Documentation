@@ -1,4 +1,4 @@
-# FAQ
+# Questions
 
 ## Receiving MySQL Details
 
