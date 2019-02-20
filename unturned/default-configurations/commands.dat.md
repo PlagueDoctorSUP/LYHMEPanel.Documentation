@@ -15,44 +15,69 @@ Wanting to edit the name of your server along with maybe even change the map? Gr
 
 Now you are there! Nice work.
 
-### Commands List <a id="where-is-it-located"></a>
+### Feature List <a id="where-is-it-located"></a>
 
 Note: Each command you want to add goes on its own line.
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Command</th>
-      <th style="text-align:left">Syntax</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">Feature</th>
+      <th style="text-align:left">Syntax / Example</th>
+      <th style="text-align:left">Understanding</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left">Chatrate</td>
-      <td style="text-align:left">Chatrate [Number]</td>
-      <td style="text-align:left">Assigns a minimum time between chat messages to prevent spamming.</td>
+      <td style="text-align:left">
+        <p>Chatrate [Number]</p>
+        <p><b>Chatrate 1</b>
+        </p>
+      </td>
+      <td style="text-align:left">Do you want to prevent players from spamming messages? This will allow
+        you to assign the minimum time between chat messages.</td>
     </tr>
     <tr>
       <td style="text-align:left">Cheats</td>
-      <td style="text-align:left">Cheats [Enable | Disable]</td>
-      <td style="text-align:left">Allows your server to access certain commands, such as Give, and can only
-        be used in the server's commands.dat file.</td>
+      <td style="text-align:left">
+        <p>Cheats [Enable | Disable]</p>
+        <p><b>Cheats Enable</b>
+        </p>
+      </td>
+      <td style="text-align:left">Do you want to use different commands such as but not limited to, <b>/i [ID or Name] [Amount]</b> and <b>/v [ID or Name]</b>?
+        This will allow you to do just that.</td>
     </tr>
     <tr>
       <td style="text-align:left">Cycle</td>
-      <td style="text-align:left">Cycle [Number]</td>
-      <td style="text-align:left">Assigns the length of the day/night cycle in seconds.</td>
+      <td style="text-align:left">
+        <p>Cycle [Number]</p>
+        <p><b>Cycle 3600</b>
+        </p>
+      </td>
+      <td style="text-align:left">Do you want to customize your server to be day time for one hour and night
+        time for an hour? This feature allows you to assign the length of the day/night
+        cycle in <a href="https://www.saving.org/calculators/hours-minutes-seconds-calculator">seconds</a>.</td>
     </tr>
     <tr>
       <td style="text-align:left">Filter</td>
-      <td style="text-align:left">Filter</td>
-      <td style="text-align:left">Filters out players with non-English-alphanumeric names.</td>
+      <td style="text-align:left">
+        <p>Filter</p>
+        <p><b>Filter</b>
+        </p>
+      </td>
+      <td style="text-align:left">Tired of trying to ban or kick players with non-English names? This feature
+        will allows you to filters out though players.</td>
     </tr>
     <tr>
       <td style="text-align:left">Gold</td>
-      <td style="text-align:left">Gold</td>
-      <td style="text-align:left">Restricts the server to only allow Gold players.</td>
+      <td style="text-align:left">
+        <p>Gold</p>
+        <p><b>Gold</b>
+        </p>
+      </td>
+      <td style="text-align:left">Want your server to only accept <a href="https://store.steampowered.com/app/306460/Unturned__Permanent_Gold_Upgrade/">permanent gold upgrade</a> players?
+        This feature is for you!</td>
     </tr>
     <tr>
       <td style="text-align:left">Hide_Admins</td>
