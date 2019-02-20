@@ -73,7 +73,7 @@ When you try to join your server does it say wrong version or its out of date? T
 
 Give it some time and then your service will be updated to the latest release of the game then click the `x` to close on the popup!
 
-### Server Status Is "Unknown" <a id="server-status-is-unknown"></a>
+### Status Is "Unknown" <a id="server-status-is-unknown"></a>
 
 What you will want to do is login to [lyhmehosting.com](https://billing.lyhmehosting.com/clientarea.php)
 
