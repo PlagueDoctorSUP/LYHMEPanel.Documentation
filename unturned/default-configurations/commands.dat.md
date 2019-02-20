@@ -1,14 +1,14 @@
 # Commands.dat
 
- You would like to maybe change your server name, maybe even the map and other things lets do just that!
-
 {% hint style="info" %}
 Each time you make a change or changes to this file you have to reboot your server. Along with capitals and lowercases don't matter. 💪🏼
 {% endhint %}
 
-### File Location <a id="where-is-it-located"></a>
+### File Location :thumbsup::skin-tone-2: <a id="where-is-it-located"></a>
 
-Great question! To do this you will want to login to [lyhmepanel.com](https://lyhmepanel.com)
+Great question! To do this you will want to login to [lyhmepanel.com](https://lyhmepanel.com) 
+
+
 
 1. Click on [Game Services](http://lyhmepanel.com/Interface/GameHosting/GameServers.aspx) under Game & Voice Management then if you have more then one server select the one you want to change
 2. Save and then stop your service then click on `Configuration Files` then to the left of `Commands.dat` Click on `[ Text Editor ]`
