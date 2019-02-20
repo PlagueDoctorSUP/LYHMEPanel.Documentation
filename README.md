@@ -1,7 +1,3 @@
----
-description: Documentation about game servers we host.
----
-
 # Home
 
 ### The following pages documents on how to use LYHMEPanel \(TCAdmin 2\)
