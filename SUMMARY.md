@@ -2,7 +2,7 @@
 
 * [Home](README.md)
 * [Getting Started](getting-started.md)
-* [You May Ask](faq.md)
+* [You May Ask](you-may-ask.md)
 
 ## Unturned
 
