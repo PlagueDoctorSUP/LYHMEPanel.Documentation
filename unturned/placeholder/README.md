@@ -1,2 +1,2 @@
-# Placeholder
+# Vanilla Configurations
 
